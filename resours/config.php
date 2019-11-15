@@ -1,11 +1,17 @@
 <?php
 
 
+//global variables
+
+$error_array = array();
+$msg_array = array();
+
 ob_start();
 
 session_start();
 //session_destroy();
 //path config
+
 
 defined("DS") ? null : define("DS", DIRECTORY_SEPARATOR); // DS 3arftha bach tali hiya shlach (/)
 

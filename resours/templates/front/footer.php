@@ -8,6 +8,8 @@
 <script src="public/assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script> <!-- Sparkline Plugin Js -->
 <script src="public/assets/plugins/chartjs/Chart.bundle.min.js"></script> <!-- Chart Plugins Js -->
 
+<script src="public/assets/plugins/bootstrap-notify/bootstrap-notify.js"></script> <!-- Bootstrap Notify Plugin Js -->
+<script src="public/assets/js/pages/ui/notifications.js"></script> <!-- Custom Js -->
 <script src="public/assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js -->
 <script src="public/assets/js/pages/charts/sparkline.min.js"></script>
 <script src="public/assets/js/pages/index.js"></script>

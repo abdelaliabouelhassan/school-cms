@@ -1,12 +1,15 @@
+
+
 $(function () {
-    $('.jsdemo-notification-button button').on('click', function () {
+    $('.jsdemo-notification-button submit').on('click', function () {
         var placementFrom = $(this).data('placement-from');
         var placementAlign = $(this).data('placement-align');
         var animateEnter = $(this).data('animate-enter');
         var animateExit = $(this).data('animate-exit');
         var colorName = $(this).data('color-name');
+        var text = $(this).data('notif-text');
 
-        showNotification(colorName, null, placementFrom, placementAlign, animateEnter, animateExit);
+        showNotification(colorName, text, placementFrom, placementAlign, animateEnter, animateExit);
     });
 });
 

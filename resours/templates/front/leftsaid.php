@@ -34,20 +34,20 @@
                      <li><a href="students-invoice.html">Students Invoice</a></li>
                  </ul>
              </li>
-             <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-graduation-cap"></i><span>Courses</span> </a>
+             <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-graduation-cap"></i><span>Subjects</span> </a>
                  <ul class="ml-menu">
-                     <li><a href="courses.html">All Courses</a></li>
-                     <li><a href="add-courses.html">Add Courses</a></li>
+                     <li><a href="courses.html">All Subjects</a></li>
+                     <li><a href="index?Add_Subjects&/class=<?php echo uniqid() ?>">Add Subjects</a></li>
                      <li><a href="courses-info.html">Courses Info</a></li>
                  </ul>
              </li>
-             <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-book"></i><span>Library</span> </a>
+             <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-book"></i><span>Levels of study</span> </a>
                  <ul class="ml-menu">
-                     <li><a href="library.html">All Library</a></li>
-                     <li><a href="add-library.html">Add Library</a></li>
+                     <li><a href="library.html">All Levels</a></li>
+                     <li><a href="index?Add_Levels&/study/<?php echo uniqid() . 'lol' . uniqid();  ?>">Add Levels</a></li>
                  </ul>
              </li>
-             <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-city-alt"></i><span>Departments</span> </a>
+             <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-city-alt"></i><span>DEPARTMENTS</span> </a>
                  <ul class="ml-menu">
                      <li><a href="departments.html">All Departments</a></li>
                      <li><a href="add-departments.html">Add Departments</a></li>
