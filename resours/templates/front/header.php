@@ -12,6 +12,8 @@
     <!-- Custom Css -->
     <link href="public/assets/css/main.css" rel="stylesheet">
 
+    <link href="public/assets/plugins/jquery-datatable/dataTables.bootstrap4.min.css" rel="stylesheet">
+
     <link href="public/assets/css/themes/all-themes.css" rel="stylesheet" />
 </head>
 
@@ -32,5 +34,3 @@
             <p>Please wait...</p>
         </div>
     </div>
-
-

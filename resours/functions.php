@@ -324,7 +324,12 @@
             elseif ($coefficient == 0) {
                     global $error_array;
                     array_push($error_array, "<div class='alert bg-red'>The Coefficient Can't Be Equal 0</div>");
-            }else{
+            }
+            elseif($coefficient <=0 ){
+                    global $error_array;
+                    array_push($error_array, "<div class='alert bg-red'>The Coefficient Can't Be <=0 </div>");
+            }
+            else{
                     if(IsDropDownListSelect($group)){
                             if (IsAlareadyExist("si",2,"subjects", "title", $subject, "id_Subjects_grp",$group)) {
 
@@ -344,8 +349,59 @@
             }
 
     }
+    ///
+    function showalllevels(){
+       $query = query("SELECT * FROM subjects_grp");
+       confirm($query);
+       while ($row = fetch_array($query)){
+           $id = $row['id'];
+           $query1 = query("select * from subjects WHERE id_Subjects_grp = '$id'");
+           while($row1 = fetch_array($query1)){
+               $print = <<<delemeter
+                               <tr>
+                                    <td>{$row1['title']}</td>
+                                    <td>{$row['title']}</td>
+                                    <td>{$row1['Modulus']}</td>
+                                </tr>
+delemeter;
+               echo $print;
+           }
+       }
+    }
+    ///
+    function editlevels(){
+
+        $query2 = query("SELECT * FROM subjects_grp");
+        confirm($query2);
+
+        $query = query("SELECT * FROM subjects_grp");
+        confirm($query);
+        while ($row = fetch_array($query)){
+            $id = $row['id'];
+                $uniq1 = uniqid();
+                $uniq2 = uniqid();
+                $uniq3 = uniqid();
+            $query1 = query("select * from subjects WHERE id_Subjects_grp = '$id'");
+            while($row1 = fetch_array($query1)){
+                $print = <<<delemeter
+                               <tr>                             
+                                  <td><span class="label label-primary">{$row1['title']}</span><input type="text" name="sub" class="form-control"  placeholder="Click here To Edit Subject" autocomplete="off"></td>
+                                   <td><span class="label label-primary">{$row['title']}</span><input type="text" name="grp" class="form-control"  placeholder="Click here To Edit Group" autocomplete="off"></td>                              
+                                  <td><span class="label label-primary">{$row1['Modulus']}</span><input type="text" name="coe" class="form-control"  placeholder="Click here To Edit Coefficient" autocomplete="off"></td>
+                                  <td><a href="REDERECT?save={$row1['id']}&{$uniq1}" ><button type="submit" name="save" class="btn btn-raised bg-blue waves-effect" title="Save Changes"> <i class="material-icons">check</i> </button></a></td>
+                                   <td><a href="REDERECT?delete={$row1['id']}&{$uniq2}" ><button type="submit" name="delete" class="btn btn-raised bg-blue waves-effect" title="Delete Subject"> <i class="material-icons">delete</i> </button></a></td>
+                                    <td><a href="REDERECT?cancel={$row1['id']}&{$uniq3}}" ><button type="submit" name="cancel" class="btn btn-raised bg-blue waves-effect" title="Cancel"> <i class="material-icons">cancel</i> </button></a></td>
+                              </tr>
+delemeter;
+                echo $print;
 
 
+            }
+        }
+
+    }
+
+///
 
 
 

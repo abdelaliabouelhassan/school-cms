@@ -41,10 +41,11 @@
                      <li><a href="courses-info.html">Courses Info</a></li>
                  </ul>
              </li>
-             <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-book"></i><span>Levels of study</span> </a>
+             <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-book"></i><span>Levels & Subjects</span> </a>
                  <ul class="ml-menu">
-                     <li><a href="library.html">All Levels</a></li>
-                     <li><a href="index?Add_Levels&/study/<?php echo uniqid() . 'lol' . uniqid();  ?>">Add Levels</a></li>
+                     <li><a href="index?All_Levels&/study/<?php echo uniqid() . 'lol' . uniqid();  ?>">All Levels & Subjects</a></li>
+                     <li><a href="index?Add_Levels&/study/<?php echo uniqid() . 'lol' . uniqid();  ?>">Add Levels & Subjects</a></li>
+                     <li><a href="index?Edit&/study/<?php echo uniqid() . 'lol' . uniqid();  ?>">Edit Levels & Subjects</a></li>
                  </ul>
              </li>
              <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-city-alt"></i><span>DEPARTMENTS</span> </a>

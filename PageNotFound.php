@@ -36,9 +36,9 @@
     <div class="theme-bg"></div>
 
     <!-- Jquery Core Js -->
-    <script src="public/assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
-    <script src="public/assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
-    <script src="public/assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js -->
+    <script src="public/assets/bundles/libscripts.bundle.js"></script>  <!-- Lib Scripts Plugin Js -->
+    <script src="public/assets/bundles/vendorscripts.bundle.js"></script>  <!-- Lib Scripts Plugin Js -->
+    <script src="public/assets/bundles/mainscripts.bundle.js"></script> <!-- Custom Js -->
 </body>
 
 </html>

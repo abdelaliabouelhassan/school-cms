@@ -1,9 +1,13 @@
 <?php
+
+
 if (isset($_POST['savegroup'])) {
     addgrp($_POST['grp']);
+
 }
 if(isset($_POST['addubject'])){
-    Add_subject($_POST['subject'],$_POST['drp'],$_POST['coefficient']);
+    Add_subject($_POST['subject'],$_POST['drp'],$_POST['coefficient']);$isisset = true;
+
 }
 
 ?>
@@ -30,7 +34,7 @@ if(isset($_POST['addubject'])){
                                     <div class="col-md-4">
                                         <div class="input-group"> <span class="input-group-addon">#</span>
                                             <div class="form-line">
-                                                <input type="text" name="grp" class="form-control" placeholder="2Bac Or 1Bac ...Or Scientific common stump..etc">
+                                                <input type="text" name="grp" class="form-control"  placeholder="2Bac Or 1Bac ...Or Scientific common stump..etc">
                                             </div>
                                         </div>
                                     </div>
@@ -50,10 +54,12 @@ if(isset($_POST['addubject'])){
                             <h2 class="card-inside-title">
                                 <div class='alert bg-orange'>Add subjects With Group And The Coefficient </div>
                                 <?php
+
                                     PrintErrors("<div class='alert bg-red'>Please Fill All Input</div>");
                                     PrintErrors("<div class='alert bg-red'>The Coefficient Can't Be Equal 0</div>");
                                     PrintErrors("<div class='alert bg-red'>This Subject Is Already Exist</div>");
                                     PrintErrors("<div class='alert bg-red'>Select Please The Group</div>");
+                                    PrintErrors("<div class='alert bg-red'>The Coefficient Can't Be <=0 </div>");
                                     msg("<div class='alert bg-green alert-dismissible' role='alert'><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>The Subject Added Successfully</div>");
 
                                 ?>
